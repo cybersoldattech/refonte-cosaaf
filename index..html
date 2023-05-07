@@ -3,58 +3,295 @@
 <html lang="en">
 
 <head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Co-saaf</title>
 
-    <title>Co-saaf</title>
+  <!-- START SEO PROPERTY-->
 
-    <!-- START SEO PROPERTY-->
+  <!-- END SEO PROPERTY-->
 
-    <!-- END SEO PROPERTY-->
+  <!-- Link to CSS-->
 
-    <!-- Link to CSS-->
+  <!--Box Icons-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 
-    <link rel="stylesheet" href="./style.css" />
-
-    <!--Box Icons-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
-
+  <link rel="stylesheet" href="./style.css" />
 </head>
 
 <body>
-    <!--NavBar-->
-    <header>
-        <a href="#" class="logo"><i class="bx bxs-basket"></i>Delicacy</a>
-        <!--start navlist-->
-        <div class="bx bx-menu" id="menu-icon"></div>
+  <!--NavBar-->
+  <header>
+    <a href="#" class="logo"><i class="bx bxs-basket"></i>Delicacy</a>
+    <!--start navlist-->
+    <div class="bx bx-menu" id="menu-icon"></div>
 
-            <ul class="navbar">
-                <li><a href="#home" class="home-active">Home</a></li>
-                <li><a href="#categories">Categories</a></li>
-                <li><a href="#product">Products</a></li>
-                <li><a href="#product">About</a></li>
-                <li><a href="#customers">Customers</a></li>
-            </ul>
+    <ul class="navbar">
+      <li><a href="#home" class="home-active">Home</a></li>
+      <li><a href="#categories">Categories</a></li>
+      <li><a href="#products">Products</a></li>
+      <li><a href="#about">About</a></li>
+    </ul>
 
-        
-        <!--end navlist-->
+    <!--end navlist-->
 
-        <!--start Profile-->
-        <div class="profile">
-            <img src="img/profile.jpg" alt="profile">
-            <span>User</span>
-            <i class="bx bx-caret-down"></i>
+    <!--start Profile-->
+    <div class="profile">
+      <!-- <img src="img/profile.jpg" alt="profile" />
+      <span>User</span> -->
+      <i class="bx bx-caret-down"></i>
+    </div>
+    <!--end Profile-->
+  </header>
+  <!--Start Home-->
+  <section class="home swiper" id="home">
+    <swiper-container class="mySwiper" navigation="true" pagination="true" keyboard="true" mousewheel="true"
+      css-mode="true">
+
+      <swiper-slide class="swiper-slide container">
+        <div class="home-text">
+          <span>We are delicacy</span>
+          <h1>Choose delicacy <br>the best healthy <br> chicken salad</h1>
+          <a href="#" class="btn">Shop Now<i class="bx bx-right-arrow-alt"></i></a>
         </div>
-        <!--end Profile-->
+        <img src="assets/img/2.jpeg">
+      </swiper-slide>
 
-    </header>
-    <!--Start Home-->
-    <section class="home" id="home">
+      <!-- <swiper-slide class="swiper-slide container">
+        <div class="home-text">
+          <span>We are delicacy</span>
+          <h1>Choose delicacy <br>the best healthy <br> chicken salad</h1>
+          <a href="#" class="btn">Shop Now<i class="bx bx-right-arrow-alt"></i></a>
+        </div>
+        <img src="assets/img/1.jpg">
+      </swiper-slide> -->
+    </swiper-container>
 
-    </section>
-    <!--End Home-->
+  </section>
+  <!--End Home-->
+
+  <!--start Categories-->
+  <section class="categories" id="categories">
+    <div class="heading">
+      <h1> Browse our Hottest <br> <span>Categories</span></h1>
+      <a href="#" class="btn">See All<i class="bx bx-right-arrow-alt"></i></a>
+
+    </div>
+
+    <div class="categories-container">
+
+      <div class="box">
+        <img src="assets/img/1.png" alt="">
+        <h2>Fruits</h2>
+        <span>22 Items</span>
+        <i class="bx bx-right-arrow-alt"></i>
+      </div>
+
+      <div class="box">
+        <img src="assets/img/1.png" alt="">
+        <h2>Vegetables</h2>
+        <span>22 Items</span>
+        <i class="bx bx-right-arrow-alt"></i>
+      </div>
+
+      <div class="box">
+        <img src="assets/img/9.png" alt="">
+        <h2>Epices</h2>
+        <span>22 Items</span>
+        <i class="bx bx-right-arrow-alt"></i>
+      </div>
+
+      <div class="box">
+        <img src="assets/img/1.png" alt="">
+        <h2>Fruits</h2>
+        <span>22 Items</span>
+        <i class="bx bx-right-arrow-alt"></i>
+      </div>
+
+    </div>
+  </section>
+  <!--End Categories-->
+
+  <!--start products-->
+
+  <section class="products" id="products">
+    <div class="heading">
+      <h1>Our Popular<br> <span>Products</span></h1>
+      <a href="#" class="btn">Shop now<i class="bx bx-right-arrow-alt"></i></a>
+
+    </div>
+    <div class="products-container">
+      <!--box1-->
+      <div class="box">
+        <img src="assets/img/2'.jpg" alt="">
+        <span>Fresh Items</span>
+        <h2>Farm fresh organic <br>fruits 250g</h2>
+        <h3 class="price">$7.99 <span>kg</span></h3>
+        <i class="bx bx-cart-alt"></i>
+        <i class="bx bx-heart"></i>
+        <span class="discount">-25%</span>
+      </div>
+      <div class="box">
+        <img src="assets/img/2'.jpg" alt="">
+        <span>Fresh Items</span>
+        <h2>Farm fresh organic <br>fruits 250g</h2>
+        <h3 class="price">$7.99 <span>kg</span></h3>
+        <i class="bx bx-cart-alt"></i>
+        <i class="bx bx-heart"></i>
+        <span class="discount">-25%</span>
+      </div>
+      <div class="box">
+        <img src="assets/img/2'.jpg" alt="">
+        <span>Fresh Items</span>
+        <h2>Farm fresh organic <br>fruits 250g</h2>
+        <h3 class="price">$7.99 <span>kg</span></h3>
+        <i class="bx bx-cart-alt"></i>
+        <i class="bx bx-heart"></i>
+        <span class="discount">-25%</span>
+      </div>
+
+      <!--box2-->
+      <div class="box">
+        <img src="assets/img/2'.jpg" alt="">
+        <span>Fresh Items</span>
+        <h2>Farm fresh organic <br>fruits 250g</h2>
+        <h3 class="price">$7.99 <span>kg</span></h3>
+        <i class="bx bx-cart-alt"></i>
+        <i class="bx bx-heart"></i>
+        <span class="discount">-25%</span>
+      </div>
+
+      <!--box3-->
+      <div class="box">
+        <img src="assets/img/2'.jpg" alt="">
+        <span>Fresh Items</span>
+        <h2>Farm fresh organic <br>fruits 250g</h2>
+        <h3 class="price">$7.99 <span>kg</span></h3>
+        <i class="bx bx-cart-alt"></i>
+        <i class="bx bx-heart"></i>
+        <span class="discount">-25%</span>
+      </div>
+
+      <!--box4-->
+      <div class="box">
+        <img src="assets/img/2'.jpg" alt="">
+        <span>Fresh Items</span>
+        <h2>Farm fresh organic <br>fruits 250g</h2>
+        <h3 class="price">$7.99 <span>kg</span></h3>
+        <i class="bx bx-cart-alt"></i>
+        <i class="bx bx-heart"></i>
+        <span class="discount">-25%</span>
+      </div>
+
+      <!--box5-->
+      <div class="box">
+        <img src="assets/img/2'.jpg" alt="">
+        <span>Fresh Items</span>
+        <h2>Farm fresh organic <br>fruits 250g</h2>
+        <h3 class="price">$7.99 <span>kg</span></h3>
+        <i class="bx bx-cart-alt"></i>
+        <i class="bx bx-heart"></i>
+        <span class="discount">-25%</span>
+      </div>
+
+      <!--box6-->
+      <div class="box">
+        <img src="assets/img/2'.jpg" alt="">
+        <span>Fresh Items</span>
+        <h2>Farm fresh organic <br>fruits 250g</h2>
+        <h3 class="price">$7.99 <span>kg</span></h3>
+        <i class="bx bx-cart-alt"></i>
+        <i class="bx bx-heart"></i>
+        <span class="discount">-25%</span>
+      </div>
+
+      <!--box7-->
+      <div class="box">
+        <img src="assets/img/2'.jpg" alt="">
+        <span>Fresh Items</span>
+        <h2>Farm fresh organic <br>fruits 250g</h2>
+        <h3 class="price">$7.99 <span>kg</span></h3>
+        <i class="bx bx-cart-alt"></i>
+        <i class="bx bx-heart"></i>
+        <span class="discount">-25%</span>
+      </div>
+
+      <!--box8-->
+      <div class="box">
+        <img src="assets/img/2'.jpg" alt="">
+        <span>Fresh Items</span>
+        <h2>Farm fresh organic <br>fruits 250g</h2>
+        <h3 class="price">$7.99 <span>kg</span></h3>
+        <i class="bx bx-cart-alt"></i>
+        <i class="bx bx-heart"></i>
+        <span class="discount">-25%</span>
+      </div>
+    </div>
+
+  </section>
+  <!--End products-->
+
+  <section class="about" id="about">
+    <img src="assets/img/8.png" alt="">
+    <div class="about-text">
+      <span>About-us</span>
+      <p>Nous sommes une équipe de passionnés guidés par l'amour des saveurs et de la cuisine. Nous proposons toutes les
+        épices de qualité en vrac dans différents formats, de 25 grammes à 1 kilo. Nos tarifs varient selon la quantité
+        sélectionnée et sont dégressifs. Nous sélectionnons avec soin nos fournisseurs pour vous offrir les meilleures
+        épices et herbes aromatiques de qualité du monde. Toutes les commandes sont conditionnées le jour de votre
+        commande, chaque herbe ou épice est moulue à la demande pour garder toute sa saveur et sa fraicheur. Nous avons
+        à cœur de vous offrir un service de qualité, c'est pourquoi votre commande est expédiée....</p>
+      <p></p>
+      <a href="#" class="btn">Learn More<i class="bx bx-right-arrow-alt"></i></a>
+    </div>
+
+  </section>
+
+  <section class="footer" id="footer">
+    <div class="footer-box">
+      <a href="#" class="logo"><i class="bx bxs-basket"></i>Delicacy</a>
+      <p>ADRESSE DE L'ENTREPRISE</p>
+      <div class="social">
+        <a href="#"><i class="bx bxl-facebook"></i></a>
+        <a href="#"><i class="bx bxl-twitter"></i></a>
+        <a href="#"><i class="bx bxl-instagram"></i></a>
+        <a href="#"><i class="bx bxl-youtube"></i></a>
+      </div>
+    </div>
+    <div class="footer-box">
+      <h2>Categories</h2>
+      <a href="#">Fruits & Vegetables</a>
+      <a href="#">Dairy Products</a>
+      <a href="#">Package Food</a>
+      <a href="#">Bevarage</a>
+    </div>
+    <div class="footer-box">
+      <h2>Useful Links</h2>
+      <a href="#">Payements & Tax</a>
+      <a href="#">Terms of Use</a>
+      <a href="#">My blog</a>
+      <a href="#">Return Policy</a>
+    </div>
+    <div class="footer-box">
+      <h2>Newsletter</h2>
+      <p>Get 10% Discount with <br>Email</p>
+      <form>
+        <i class="bx bx-envelope"></i>
+        <input type="email" name="" id="" placeholder="Enter your Email" />
+        <i class="bx bx-arrow-back bx-rotate-180"></i>
+      </form>
+    </div>
+  </section>
+  <div class="copyright">
+
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-element-bundle.min.js"></script>
+  <script src="./main.js" defer></script>
 </body>
 
 </html>
