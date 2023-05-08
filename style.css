@@ -33,16 +33,12 @@ body {
     overflow-x: hidden;
 }
 
-section {
-    /* margin-block: 1rem; */
-}
-
 header {
     position: fixed;
     width: 100%;
     top: 0;
     right: 0;
-    z-index: 1000;
+    z-index: 100;
     display: flex;
     justify-content: space-between;
     background: var(--bg-color);
@@ -493,14 +489,13 @@ a {
     font-size: 2rem;
 }
 
-.copyright {}
-
 /*CUSTOM AND RESPONSIVE*/
 
 
 /*CUSTOM*/
 
 /*Start Custom scrollbar*/
+
 ::-webkit-scrollbar {
     width: 0.5rem;
     background: var(--light-green-color);
@@ -516,6 +511,7 @@ a {
 
 
 /*RESPONSIVE*/
+
 @media(max-width:1080px) {
     header {
         padding: 18px 60px;
@@ -531,6 +527,7 @@ a {
 }
 
 /*RESPONSIVE*/
+
 @media(max-width:991px) {
     header {
         padding: 18px 4%;
@@ -649,3 +646,30 @@ a {
         display: none;
     }
 }
+
+/*SIDEBAR MENU*/
+
+.sidebar {
+    height: 100%; 
+    width: 0;
+    position: fixed;
+    z-index: 9999; 
+    top: 0;
+    right: 0;
+    background:var(--bg-color); 
+    overflow-x: hidden; 
+    padding-top: 60px; 
+    transition: 0.6s; 
+  }
+
+  .sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 2.3rem;
+    margin-left: 50px;
+  }
+  
+  @media screen and (max-height: 450px) {
+    .sidebar {padding-top: 15px;}
+  }
