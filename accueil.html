@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Isotope Example</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.min.css" />
+</head>
+<body>
+
+  <div class="categories">    
+  <div data-filter="*">Tous</div>
+    <div data-filter=".category1">Category 1</div>
+    <div data-filter=".category2">Category 2</div>
+    <div data-filter=".category3">Category 3</div>
+  </div>
+
+  <div class="products-container">
+    <div class="box category1">Product 1</div>
+    <div class="box category2">Product 2</div>
+    <div class="box category3">Product 3</div>
+    <div class="box category1">Product 4</div>
+    <div class="box category2">Product 5</div>
+    <div class="box category3">Product 6</div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.6/isotope.pkgd.min.js"></script>
+
+  <script type="text/javascript">
+    $('.categories').on( 'click','div', function() {
+      var filterValue = $(this).attr('data-filter');
+      $grid.isotope({ filter: filterValue });
+      console.log("filterValue",filterValue);
+    }); 
+
+    var $grid =  $('.products-container').isotope({
+      itemSelector: '.box',
+      percentPosition: true,
+      transitionDuration: '0.7s',
+      layoutMode: 'fitRows',
+      masonry: {
+        columnWidth: 1,
+      }
+    });
+  </script>
+
+</body>
+</html>
